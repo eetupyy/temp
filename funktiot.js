@@ -1,10 +1,10 @@
 // Author Eetu
 // 9.9.2019
 
-function temp(){
-
+function temp(x){
+    
+    console.log(celToFah(100));
 }
-
 
 function celToFah(c){
     return c * 1.8 + 32;
@@ -17,4 +17,3 @@ function fahToCel(f){
 function desi1() {
 
 }
-<button onclick="temp()">Laske</button>
