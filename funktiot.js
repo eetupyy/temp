@@ -1,5 +1,5 @@
-// var celtofah = 
-// var fahtocel = x - 32 / 1.8
+// Author Eetu
+// 9.9.2019
 
 function temp(){
 
