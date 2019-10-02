@@ -3,20 +3,27 @@
 <body>
 <h2>Lämpötilamuunnin</h2>
 <p>Valitse muunnettavat yksiköt</p>
-<select name="yksiköt">
+<select name="yksiköt" id=toiminto>
     <option value="celtofah">Celsius -> Fahrenheit</option>
     <option value="fahtocel">Fahrenheit -> Celsius</option>
+    <option value="keltocel">Kelvin -> Celsius</option>
+    <option value="celtokel">Celsius -> Kelvin</option>
+    <option value="keltofah">Kelvin -> Fahrenheit</option>
+    <option value="fahtokel">Fahrenheit -> Kelvin</option>
 </select>
 
 <br>
 Lämpötila:<br>
-<input type="text" name="lämpötila">
-<button onclick="temp()">Laske</button><br>
-<from>
-    <input type="radio" name="desimaali" value="desi1"checked> 1 Desimaali<br>
-    <input type="radio" name="desimaali" value="desi2"> 2 Desimaalia<br>
-    <input type="radio" name="desimaali" value="desi3"> 3 Desimaalia<br>
-</from>
+<input id="tempField" type="number" name="lämpötila">
+
+<button onclick="temp(document.getElementById('tempField').value)">Laske</button><br>
+
+<input type="radio" name="desimaali" value="1" checked> 1 Desimaali<br>
+<input type="radio" name="desimaali" value="2"> 2 Desimaalia<br>
+<input type="radio" name="desimaali" value="3"> 3 Desimaalia<br>
+
+<p id="tempResult"></p>
+
 <script src="funktiot.js"></script>
 </body>
 </html>
